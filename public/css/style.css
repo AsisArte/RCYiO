@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    scroll-behavior: smooth;
+    font-family: 'Roboto';
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+main{
+    min-height: 100vh;
+}
+h2{
+    font-size: 50px;
+    color: #000000;
+    margin-top: 50px;
+}
+content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Стили для кнопок*/
+button{
+    border: none;
+    background: #3D3D3D;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 70px;
+    cursor: pointer;
+}
+button:hover{
+    background: #2C2C2C;
+    color: #C4C4C4;
+}
+button:active{
+    background: #FFC031;
+    color: #000;
+}
+
+/*Стили для навигации*/
+header{
+    background-color: #3D3D3D;
+    width: 100%;
+    padding: 20px 0;
+}
+header p, header a, .foot p {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.logo{
+    font-size: 36px;
+    color: #FFC031;
+}
+.head{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.head, .right, .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.right {
+    justify-content: flex-end;
+}
+a {
+    margin-right: 37px;
+    text-align: center;
+}
+.logindevider {
+    margin-left: -32px;
+    margin-right: 5px;
+}
+
+/*Стили для подвала*/
+footer{
+    background-color: #2C2C2C;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    margin-top: auto;
+}
+.foot {
+    max-width: 85%;
+    margin: 35px auto;
+}
+.foot p{
+    margin-top: 20px;
+}
+
+/*Стили для главной страницы*/
+/*текст с картинкой на фоне*/
+.fon{
+    width: 100%;
+}
+.fon img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.fon-text{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 150px;
+}
+.fon-text h1{
+    font-size: 72px;
+    color: #FFC031;
+}
+.fon-text p{
+    margin-top: 30px;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+}
+.fon-altext{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fon-altext h2{
+    font-size: 50px;
+    color: #FFC031;
+    margin-top: 50px;
+}
+.text p{
+    margin: 65px 0;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+/*модные кружочки*/
+.ych{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 300px 0 100px 0;
+}
+.ych-block{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.block p{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin-top: 80px;
+}
+.kryg{
+    width: 250px;
+    height: 250px;
+    border: 15px dashed #FFC031;
+    box-sizing: border-box;
+    border-radius: 1000px;
+}
+.kryg p{
+    font-size: 96px;
+    line-height: 112px;
+    color: #FFC031;
+    margin: 50px;
+}
+
+/*Стили для страниц "О нас" и "Контакты"*/
+/*текст и картинка с боку*/
+.inf{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inf-block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+.inf-right{
+    width: 45%;
+}
+.inf-center{
+    margin-bottom: 60px;
+}
+.inf-right h3{
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+.inf-right h4, .inf-center h4{
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-top: 30px;
+}
+.inf-left h4{
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+.inf-right p, .inf-center p{
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 20px;
+}
+.inf-right img{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Стили для страницы "Личный кабинет"*/
+/*карточка обращения из бд*/
+.lk{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lk-block{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.userroom-card{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem  2rem ;
+    box-shadow: 0px 4px 46px -3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 46px;
+}
+.text-column {
+    width: 95%;
+    margin: 35px auto;
+}
+.text-column h4{
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+.text-column .smal{
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 20px;
+}
+.text-wide .thin{
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 20px 0;
+}

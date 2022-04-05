@@ -1,0 +1,81 @@
+.container {
+    width: 90%;
+    margin:0 auto 36px;
+    display: flex;
+    flex-direction:column;
+  }
+  input[type="checkbox"] {
+    display:none;
+  }
+  label {
+    width:23%;
+    float:left;
+    text-align:center;
+    background:#3D3D3D;
+    color:#000;
+    padding:1.5% 2%;
+    cursor:pointer;
+    border-left: solid 5px #3D3D3D;
+    border-bottom: solid 5px #3D3D3D;
+    font-size: 20px;
+  }
+  input[type="checkbox"][id="blue"]:checked + label {
+    background:#FFC031;
+  }
+  input[type="checkbox"][id="blue"]:checked ~ .blue{
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+  .tile {
+    width:23%;
+    height:100px;
+    float:left;
+    transition:all 1s;
+    padding:0.5%;
+  }
+  .blue {
+    display: flex;
+    border-left: solid 5px #3D3D3D;
+    border-bottom: solid 5px #3D3D3D;
+    padding:1.5% 2%;
+    height:420px;
+    width: 50%;
+    min-width: 320px;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input,form select, form textarea{
+    border: 1px solid #393535;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 16px;
+    line-height: 18px;
+    color: #A59797;
+    margin-bottom:12px ;
+  }
+  
+  form button{
+    font-size: 22px;
+    line-height: 25px;
+    background: #3D3D3D;
+    border-radius: 5px;
+    color: #FFFFFF;
+  }
+  
+  form button:hover{
+    background-color: #2C2C2C;
+    color: #C4C4C4;
+  }
+
+  form button:active{
+    background-color: #FFC031;
+    color: #000;
+  }
